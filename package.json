@@ -1,0 +1,26 @@
+{
+  "name": "ProgArchivesClient",
+  "version": "0.0.1",
+  "description": "Fetch data easily from ProgArchives.com - using this npm package.",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava --timeout=30s"
+  },
+  "repository": "szekelymilan/ProgArchivesClient",
+  "homepage": "https://github.com/szekelymilan/ProgArchivesClient#readme",
+  "author": "Milan Szekely <szekelymilan1125@gmail.com> (https://szekelymilan.eu)",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "puppeteer": "^2.1.0",
+    "puppeteer-extra": "^3.1.9",
+    "puppeteer-extra-plugin-stealth": "^2.4.9"
+  },
+  "devDependencies": {
+    "ava": "^3.2.0"
+  },
+  "keywords": [
+    "ProgArchives",
+    "client"
+  ]
+}
