@@ -1,6 +1,6 @@
 {
   "name": "progarchives-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Fetch data easily from ProgArchives.com - using this npm package.",
   "main": "index.js",
   "scripts": {
