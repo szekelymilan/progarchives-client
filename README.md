@@ -2,7 +2,7 @@
 
 > 🎼 Fetch data easily from [ProgArchives.com](https://www.progarchives.com) - using this npm package.
 
-[![CircleCI Build Status](https://badgen.net/circleci/github/szekelymilan/progarchives-client)](https://circleci.com/gh/szekelymilan/progarchives-client)
+[![CircleCI Build Status](https://badgen.net/github/status/szekelymilan/progarchives-client/master/ci)](https://circleci.com/gh/szekelymilan/progarchives-client)
 [![PRs Welcome](https://badgen.net/badge/PRs/welcome/green)](https://github.com/szekelymilan/progarchives-client/pulls)
 [![Latest Release](https://badgen.net/github/release/szekelymilan/progarchives-client)](https://github.com/szekelymilan/progarchives-client/releases/latest)
 [![MIT License](https://badgen.net/badge/license/MIT/blue)](https://github.com/szekelymilan/progarchives-client/blob/master/LICENSE)
