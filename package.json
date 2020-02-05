@@ -1,13 +1,13 @@
 {
-  "name": "ProgArchivesClient",
+  "name": "progarchives-client",
   "version": "0.0.1",
   "description": "Fetch data easily from ProgArchives.com - using this npm package.",
   "main": "index.js",
   "scripts": {
     "test": "ava"
   },
-  "repository": "szekelymilan/ProgArchivesClient",
-  "homepage": "https://github.com/szekelymilan/ProgArchivesClient#readme",
+  "repository": "szekelymilan/progarchives-client",
+  "homepage": "https://github.com/szekelymilan/progarchives-client#readme",
   "author": "Milan Szekely <szekelymilan1125@gmail.com> (https://szekelymilan.eu)",
   "license": "MIT",
   "dependencies": {
