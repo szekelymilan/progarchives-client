@@ -12,8 +12,14 @@ jobs:
           name: Run Ava tests
           command: |
             mkdir -p ~/reports
-            ava --tap | tap-xunit > ~/reports/ava.xml
+            ./node_modules/.bin/ava --tap | ./node_modules/.bin/tap-xunit > ~/reports/ava.xml
       - store_test_results:
           path: ~/reports
       - store_artifacts:
           path: ~/reports
+
+workflows:
+  version: 2
+  run_tests:
+    jobs:
+      - test
