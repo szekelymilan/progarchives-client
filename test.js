@@ -26,16 +26,6 @@ test('albumInfo#4', async t => {
 });
 
 test('albumInfo#5', async t => {
-  const albumInfo = await ProgArchivesClient.getAlbumInfo('genesis - lamb lies down');
-  t.is(albumInfo.fullAlbumName, 'Genesis - The Lamb Lies Down On Broadway');
-});
-
-test('albumInfo#6', async t => {
-  const albumInfo = await ProgArchivesClient.getAlbumInfo('dream theater - metropolis part 2');
-  t.is(albumInfo.fullAlbumName, 'Dream Theater - Metropolis Part 2 - Scenes From A Memory');
-});
-
-test('albumInfo#7', async t => {
   const albumInfo = await ProgArchivesClient.getAlbumInfo('caravan - if i could do it');
   t.is(
     albumInfo.fullAlbumName,

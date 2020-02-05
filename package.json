@@ -4,7 +4,7 @@
   "description": "Fetch data easily from ProgArchives.com - using this npm package.",
   "main": "index.js",
   "scripts": {
-    "test": "ava --timeout=30s"
+    "test": "ava"
   },
   "repository": "szekelymilan/ProgArchivesClient",
   "homepage": "https://github.com/szekelymilan/ProgArchivesClient#readme",
@@ -17,10 +17,14 @@
     "puppeteer-extra-plugin-stealth": "^2.4.9"
   },
   "devDependencies": {
-    "ava": "^3.2.0"
+    "ava": "^3.2.0",
+    "tap-xunit": "^2.4.1"
   },
   "keywords": [
     "ProgArchives",
     "client"
-  ]
+  ],
+  "ava": {
+    "timeout": "2m"
+  }
 }

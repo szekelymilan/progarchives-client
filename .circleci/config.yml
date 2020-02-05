@@ -1,0 +1,19 @@
+version: 2.1
+jobs:
+  test:
+    docker:
+      - image: circleci/node:12.9.1-browsers
+    steps:
+      - checkout
+      - run:
+          name: Install node dependencies
+          command: npm install > /dev/null
+      - run:
+          name: Run Ava tests
+          command: |
+            mkdir -p ~/reports
+            ava --tap | tap-xunit > ~/reports/ava.xml
+      - store_test_results:
+          path: ~/reports
+      - store_artifacts:
+          path: ~/reports
