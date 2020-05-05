@@ -3,12 +3,12 @@ const puppeteer = require('puppeteer-extra');
 
 puppeteer.use(require('puppeteer-extra-plugin-stealth')());
 
-function getAlbumName(string) {
+function getAlbumNameFromTextContent(string) {
   const txt = string.split('"');
   return txt[txt.length - 2];
 }
 
-function getDistribution(string) {
+function getDistributionFromTextContent(string) {
   const txt = string.split('(');
   const answer = [];
 
@@ -48,10 +48,10 @@ exports.getAlbumInfo = async input => {
       await page.$('#main > div:nth-child(1) > h2:nth-child(2) > a:nth-child(1)'),
     );
 
-    const albumName = getAlbumName(
+    const albumName = getAlbumNameFromTextContent(
       await page.evaluate(
         element => element.textContent,
-        await page.$('#main > div:nth-child(1) > div:nth-child(8) > h2:nth-child(26)'),
+        await page.$('#main > div:nth-child(1) > div:nth-child(8) > h2:nth-child(28)'),
       ),
     );
 
@@ -65,10 +65,10 @@ exports.getAlbumInfo = async input => {
       await page.$('#nbRatings_1'),
     );
 
-    const distribution = getDistribution(
+    const distribution = getDistributionFromTextContent(
       await page.evaluate(
         element => element.textContent,
-        await page.$('#main > div:nth-child(1) > div:nth-child(8) > blockquote:nth-child(18)'),
+        await page.$('#main > div:nth-child(1) > div:nth-child(8) > blockquote:nth-child(20)'),
       ),
     );
 

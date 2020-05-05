@@ -1,6 +1,6 @@
 {
   "name": "progarchives-client",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Fetch data easily from ProgArchives.com - using this npm package.",
   "main": "index.js",
   "scripts": {
@@ -11,13 +11,13 @@
   "author": "Milan Szekely <szekelymilan1125@gmail.com> (https://szekelymilan.eu)",
   "license": "MIT",
   "dependencies": {
-    "chalk": "^3.0.0",
-    "puppeteer": "^2.1.0",
+    "chalk": "^4.0.0",
+    "puppeteer": "^3.0.2",
     "puppeteer-extra": "^3.1.9",
     "puppeteer-extra-plugin-stealth": "^2.4.9"
   },
   "devDependencies": {
-    "ava": "^3.2.0",
+    "ava": "^3.8.1",
     "tap-xunit": "^2.4.1"
   },
   "keywords": [
